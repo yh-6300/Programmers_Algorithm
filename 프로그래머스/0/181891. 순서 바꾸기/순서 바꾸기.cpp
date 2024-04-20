@@ -12,6 +12,5 @@ vector<int> solution(vector<int> num_list, int n) {
     for(int i=0;i<n;i++){
         answer.push_back(num_list[i]);
     }
-    
     return answer;
 }
