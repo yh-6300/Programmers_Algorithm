@@ -17,15 +17,9 @@ vector<int> solution(string my_string) {
     }
     
     for(int i=0;i<my_string.length();i++){
-        if(ma.find(my_string[i]) == ma.end()){
-            ma.insert(make_pair(my_string[i],1));
-        }
-        else{
-            ma[my_string[i]]++;
-        }
+        ma[my_string[i]]++;
     }
     for(auto t : ma){
-       // cout << t.first << " " << t.second << endl;
         answer.push_back(t.second);
     }
     
