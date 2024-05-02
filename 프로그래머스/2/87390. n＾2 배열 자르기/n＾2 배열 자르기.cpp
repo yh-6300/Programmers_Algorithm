@@ -10,10 +10,14 @@ vector<int> solution(int n, long long left, long long right) {
     //vector<vector<int>> v(n, vector<int>(n,0));
     
    for(long long i = left; i <= right; ++i) {
-        long long x = i / n;
-        long long y = i % n;
-        if(x < y) answer.push_back(y + 1);
-        else answer.push_back(x + 1);
+        long long a = i / n;
+        long long b = i % n;
+        if(a > b){
+            answer.push_back(a + 1);
+        }  
+        else{
+            answer.push_back(b + 1);
+        }
     }
     
     
